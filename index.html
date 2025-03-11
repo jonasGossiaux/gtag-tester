@@ -25,6 +25,7 @@
                     'https://your-sgtm-domain.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WRZ2ZGWL');</script>
 
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -228,7 +229,6 @@
 
 <body>
     <!-- GTM Container Injection Point (this will be replaced by code from textarea) -->
-    <div id="gtm-injection-placeholder"></div>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KSHHG44" height="0" width="0"
@@ -243,54 +243,7 @@
     </header>
 
     <div class="container">
-        <div class="setup-section">
-            <h2>GTM Setup</h2>
-            <div class="tab-container">
-                <div class="tabs">
-                    <div class="tab active" onclick="openTab(event, 'web-gtm')">Web GTM</div>
-                    <div class="tab" onclick="openTab(event, 'server-gtm')">Server-side GTM</div>
-                </div>
-                <div id="web-gtm" class="tab-content active">
-                    <h3>Web GTM Setup</h3>
-                    <p>Paste your GTM code below and click "Inject GTM":</p>
-                    <textarea id="gtm-code" placeholder="Paste your GTM container code here...">
-<!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-XXXXXXX');</script>
-<!-- End Google Tag Manager -->
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-                    </textarea>
-                    <button onclick="injectGTM('web')">Inject Web GTM</button>
-                </div>
-                <div id="server-gtm" class="tab-content">
-                    <h3>Server-side GTM Setup</h3>
-                    <p>Paste your server-side GTM code below and click "Inject Server GTM":</p>
-                    <textarea id="server-gtm-code" placeholder="Paste your server-side GTM container code here...">
-<!-- Server-side Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://your-sgtm-domain.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WRZ2ZGWL');</script>
-<!-- End Server-side Google Tag Manager -->
-                    </textarea>
-                    <button onclick="injectGTM('server')">Inject Server GTM</button>
-                </div>
-            </div>
-        </div>
 
         <div class="setup-section">
             <h2>DataLayer Inspector</h2>
