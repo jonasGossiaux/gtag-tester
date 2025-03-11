@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTM Testing Lab</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5KSHHG44');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://your-sgtm-domain.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WRZ2ZGWL');</script>
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,40 +33,47 @@
             background-color: #f5f5f5;
             color: #333;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
+
         .setup-section {
             background-color: #fff;
             border-radius: 5px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
+
         .product-card {
             background-color: #fff;
             border-radius: 5px;
             padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
         }
+
         .product-card:hover {
             transform: translateY(-5px);
         }
+
         .product-image {
             height: 150px;
             background-color: #eee;
@@ -56,6 +84,7 @@
             font-size: 14px;
             color: #777;
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -66,9 +95,11 @@
             margin: 5px 0;
             font-size: 14px;
         }
+
         button:hover {
             background-color: #45a049;
         }
+
         textarea {
             width: 100%;
             height: 150px;
@@ -78,27 +109,32 @@
             border-radius: 4px;
             font-family: monospace;
         }
+
         .button-group {
             display: flex;
             gap: 10px;
             margin-top: 10px;
         }
+
         .cart-section {
             background-color: #fff;
             border-radius: 5px;
             padding: 20px;
             margin-top: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .cart-items {
             margin-top: 15px;
         }
+
         .cart-item {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
             border-bottom: 1px solid #eee;
         }
+
         .events-log {
             background-color: #f9f9f9;
             border: 1px solid #ddd;
@@ -109,24 +145,29 @@
             font-family: monospace;
             font-size: 14px;
         }
+
         .tab-container {
             margin-top: 20px;
         }
+
         .tabs {
             display: flex;
             border-bottom: 1px solid #ddd;
         }
+
         .tab {
             padding: 10px 20px;
             cursor: pointer;
             background-color: #f1f1f1;
             margin-right: 2px;
         }
+
         .tab.active {
             background-color: #fff;
             border: 1px solid #ddd;
             border-bottom: none;
         }
+
         .tab-content {
             display: none;
             padding: 20px;
@@ -134,9 +175,11 @@
             border: 1px solid #ddd;
             border-top: none;
         }
+
         .tab-content.active {
             display: block;
         }
+
         #snackbar {
             visibility: hidden;
             min-width: 250px;
@@ -151,23 +194,46 @@
             left: 50%;
             bottom: 30px;
         }
+
         #snackbar.show {
             visibility: visible;
             animation: fadein 0.5s, fadeout 0.5s 2.5s;
         }
+
         @keyframes fadein {
-            from {bottom: 0; opacity: 0;} 
-            to {bottom: 30px; opacity: 1;}
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
         }
+
         @keyframes fadeout {
-            from {bottom: 30px; opacity: 1;} 
-            to {bottom: 0; opacity: 0;}
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- GTM Container Injection Point (this will be replaced by code from textarea) -->
     <div id="gtm-injection-placeholder"></div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KSHHG44" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
         <div class="container">
@@ -189,11 +255,14 @@
                     <p>Paste your GTM code below and click "Inject GTM":</p>
                     <textarea id="gtm-code" placeholder="Paste your GTM container code here...">
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-XXXXXXX');</script>
 <!-- End Google Tag Manager -->
 
 <!-- Google Tag Manager (noscript) -->
@@ -208,11 +277,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p>Paste your server-side GTM code below and click "Inject Server GTM":</p>
                     <textarea id="server-gtm-code" placeholder="Paste your server-side GTM container code here...">
 <!-- Server-side Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://your-sgtm-domain.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://your-sgtm-domain.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WRZ2ZGWL');</script>
 <!-- End Server-side Google Tag Manager -->
                     </textarea>
                     <button onclick="injectGTM('server')">Inject Server GTM</button>
@@ -253,42 +325,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h2>E-commerce Demo</h2>
         <div class="products-grid">
             <!-- Product 1 -->
-            <div class="product-card" id="product-1" data-product-id="P12345" data-product-name="Premium T-Shirt" data-product-price="29.99" data-product-category="Apparel">
+            <div class="product-card" id="product-1" data-product-id="P12345" data-product-name="Premium T-Shirt"
+                data-product-price="29.99" data-product-category="Apparel">
                 <div class="product-image">Product Image: Premium T-Shirt</div>
                 <h3>Premium T-Shirt</h3>
                 <p>$29.99</p>
                 <p>A comfortable cotton t-shirt for everyday wear.</p>
-                <button onclick="viewProductDetails('P12345', 'Premium T-Shirt', 29.99, 'Apparel')">View Details</button>
+                <button onclick="viewProductDetails('P12345', 'Premium T-Shirt', 29.99, 'Apparel')">View
+                    Details</button>
                 <button onclick="addToCart('P12345', 'Premium T-Shirt', 29.99, 'Apparel', 1)">Add to Cart</button>
             </div>
-            
+
             <!-- Product 2 -->
-            <div class="product-card" id="product-2" data-product-id="P67890" data-product-name="Wireless Headphones" data-product-price="149.99" data-product-category="Electronics">
+            <div class="product-card" id="product-2" data-product-id="P67890" data-product-name="Wireless Headphones"
+                data-product-price="149.99" data-product-category="Electronics">
                 <div class="product-image">Product Image: Wireless Headphones</div>
                 <h3>Wireless Headphones</h3>
                 <p>$149.99</p>
                 <p>High-quality wireless headphones with noise cancellation.</p>
-                <button onclick="viewProductDetails('P67890', 'Wireless Headphones', 149.99, 'Electronics')">View Details</button>
-                <button onclick="addToCart('P67890', 'Wireless Headphones', 149.99, 'Electronics', 1)">Add to Cart</button>
+                <button onclick="viewProductDetails('P67890', 'Wireless Headphones', 149.99, 'Electronics')">View
+                    Details</button>
+                <button onclick="addToCart('P67890', 'Wireless Headphones', 149.99, 'Electronics', 1)">Add to
+                    Cart</button>
             </div>
-            
+
             <!-- Product 3 -->
-            <div class="product-card" id="product-3" data-product-id="P24680" data-product-name="Leather Wallet" data-product-price="49.99" data-product-category="Accessories">
+            <div class="product-card" id="product-3" data-product-id="P24680" data-product-name="Leather Wallet"
+                data-product-price="49.99" data-product-category="Accessories">
                 <div class="product-image">Product Image: Leather Wallet</div>
                 <h3>Leather Wallet</h3>
                 <p>$49.99</p>
                 <p>Genuine leather wallet with multiple compartments.</p>
-                <button onclick="viewProductDetails('P24680', 'Leather Wallet', 49.99, 'Accessories')">View Details</button>
+                <button onclick="viewProductDetails('P24680', 'Leather Wallet', 49.99, 'Accessories')">View
+                    Details</button>
                 <button onclick="addToCart('P24680', 'Leather Wallet', 49.99, 'Accessories', 1)">Add to Cart</button>
             </div>
-            
+
             <!-- Product 4 -->
-            <div class="product-card" id="product-4" data-product-id="P13579" data-product-name="Smart Watch" data-product-price="199.99" data-product-category="Electronics">
+            <div class="product-card" id="product-4" data-product-id="P13579" data-product-name="Smart Watch"
+                data-product-price="199.99" data-product-category="Electronics">
                 <div class="product-image">Product Image: Smart Watch</div>
                 <h3>Smart Watch</h3>
                 <p>$199.99</p>
                 <p>Feature-rich smartwatch with fitness tracking.</p>
-                <button onclick="viewProductDetails('P13579', 'Smart Watch', 199.99, 'Electronics')">View Details</button>
+                <button onclick="viewProductDetails('P13579', 'Smart Watch', 199.99, 'Electronics')">View
+                    Details</button>
                 <button onclick="addToCart('P13579', 'Smart Watch', 199.99, 'Electronics', 1)">Add to Cart</button>
             </div>
         </div>
@@ -322,7 +403,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         // Initialize variables
         let cart = [];
         let eventLog = [];
-        
+
         // Check if dataLayer exists, if not create it
         window.dataLayer = window.dataLayer || [];
 
@@ -330,20 +411,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         function injectGTM(type) {
             let codeElement = type === 'web' ? document.getElementById('gtm-code') : document.getElementById('server-gtm-code');
             let code = codeElement.value;
-            
+
             if (code.trim() === '') {
                 showSnackbar('Please paste GTM code first');
                 return;
             }
-            
+
             // Clear previous GTM injections
             document.getElementById('gtm-injection-placeholder').innerHTML = '';
-            
+
             // Create a new div and insert the GTM code
             let gtmDiv = document.createElement('div');
             gtmDiv.innerHTML = code;
             document.getElementById('gtm-injection-placeholder').appendChild(gtmDiv);
-            
+
             logEvent(`${type === 'web' ? 'Web' : 'Server-side'} GTM code injected`);
             showSnackbar(`${type === 'web' ? 'Web' : 'Server-side'} GTM injected successfully`);
             refreshDataLayer();
@@ -352,8 +433,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         // Function to push events to dataLayer
         function pushEvent(eventName) {
             let eventData = {};
-            
-            switch(eventName) {
+
+            switch (eventName) {
                 case 'view_item_list':
                     eventData = {
                         event: 'view_item_list',
@@ -391,7 +472,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     };
                     break;
-                    
+
                 case 'select_item':
                     eventData = {
                         event: 'select_item',
@@ -408,7 +489,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     };
                     break;
-                    
+
                 case 'view_item':
                     eventData = {
                         event: 'view_item',
@@ -427,7 +508,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     };
                     break;
-                    
+
                 case 'view_promotion':
                     eventData = {
                         event: 'view_promotion',
@@ -444,7 +525,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     };
                     break;
-                    
+
                 case 'select_promotion':
                     eventData = {
                         event: 'select_promotion',
@@ -461,28 +542,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     };
                     break;
-                
+
                 case 'login':
                     eventData = {
                         event: 'login',
                         method: 'Email'
                     };
                     break;
-                    
+
                 case 'sign_up':
                     eventData = {
                         event: 'sign_up',
                         method: 'Email'
                     };
                     break;
-                    
+
                 case 'view_search_results':
                     eventData = {
                         event: 'view_search_results',
                         search_term: 'tshirt'
                     };
                     break;
-                    
+
                 case 'share':
                     eventData = {
                         event: 'share',
@@ -491,18 +572,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         item_id: 'P12345'
                     };
                     break;
-                    
+
                 default:
                     eventData = {
                         event: eventName
                     };
             }
-            
+
             // Clear ecommerce object before pushing new ecommerce event
             if (eventData.ecommerce) {
                 window.dataLayer.push({ ecommerce: null });
             }
-            
+
             window.dataLayer.push(eventData);
             logEvent(`Event pushed: ${eventName}`);
             showSnackbar(`Event triggered: ${eventName}`);
@@ -567,7 +648,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         function addToCart(productId, productName, price, category, quantity) {
             // Check if product is already in cart
             let existingProduct = cart.find(item => item.item_id === productId);
-            
+
             if (existingProduct) {
                 existingProduct.quantity += quantity;
             } else {
@@ -579,7 +660,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     quantity: quantity
                 });
             }
-            
+
             window.dataLayer.push({ ecommerce: null });
             window.dataLayer.push({
                 event: 'add_to_cart',
@@ -595,7 +676,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     }]
                 }
             });
-            
+
             updateCartDisplay();
             logEvent(`Added to cart: ${productName}`);
             showSnackbar(`Added to cart: ${productName}`);
@@ -608,9 +689,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 showSnackbar('Your cart is empty');
                 return;
             }
-            
+
             let totalValue = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-            
+
             window.dataLayer.push({ ecommerce: null });
             window.dataLayer.push({
                 event: 'begin_checkout',
@@ -620,7 +701,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     items: cart
                 }
             });
-            
+
             logEvent('Begin checkout');
             showSnackbar('Beginning checkout process');
             refreshDataLayer();
@@ -632,9 +713,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 showSnackbar('Your cart is empty');
                 return;
             }
-            
+
             let totalValue = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-            
+
             window.dataLayer.push({ ecommerce: null });
             window.dataLayer.push({
                 event: 'add_shipping_info',
@@ -645,7 +726,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     items: cart
                 }
             });
-            
+
             logEvent('Added shipping info');
             showSnackbar('Shipping information added');
             refreshDataLayer();
@@ -657,9 +738,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 showSnackbar('Your cart is empty');
                 return;
             }
-            
+
             let totalValue = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-            
+
             window.dataLayer.push({ ecommerce: null });
             window.dataLayer.push({
                 event: 'add_payment_info',
@@ -670,7 +751,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     items: cart
                 }
             });
-            
+
             logEvent('Added payment info');
             showSnackbar('Payment information added');
             refreshDataLayer();
@@ -682,10 +763,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 showSnackbar('Your cart is empty');
                 return;
             }
-            
+
             let totalValue = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
             let transactionId = 'T-' + Math.floor(Math.random() * 100000);
-            
+
             window.dataLayer.push({ ecommerce: null });
             window.dataLayer.push({
                 event: 'purchase',
@@ -699,7 +780,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     items: cart
                 }
             });
-            
+
             logEvent(`Purchase completed: ${transactionId}`);
             showSnackbar('Purchase completed!');
             clearCart();
@@ -717,15 +798,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         // Update cart display
         function updateCartDisplay() {
             let cartElement = document.getElementById('cart-items');
-            
+
             if (cart.length === 0) {
                 cartElement.innerHTML = '<p>Your cart is empty.</p>';
                 return;
             }
-            
+
             let totalValue = 0;
             let cartHtml = '';
-            
+
             cart.forEach(item => {
                 let itemTotal = item.price * item.quantity;
                 totalValue += itemTotal;
@@ -738,14 +819,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                 `;
             });
-            
+
             cartHtml += `
                 <div class="cart-item">
                     <div><strong>Total:</strong></div>
                     <div><strong>$${totalValue.toFixed(2)}</strong></div>
                 </div>
             `;
-            
+
             cartElement.innerHTML = cartHtml;
         }
 
@@ -755,12 +836,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             for (let i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].classList.remove("active");
             }
-            
+
             let tablinks = document.getElementsByClassName("tab");
             for (let i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active");
             }
-            
+
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
@@ -768,12 +849,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         // Refresh DataLayer view
         function refreshDataLayer() {
             let dlElement = document.getElementById('dataLayer-content');
-            
+
             if (!window.dataLayer) {
                 dlElement.innerHTML = '<p>DataLayer is not initialized yet.</p>';
                 return;
             }
-            
+
             let dlHtml = '<pre>' + JSON.stringify(window.dataLayer, null, 2) + '</pre>';
             dlElement.innerHTML = dlHtml;
         }
@@ -791,15 +872,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             let now = new Date();
             let timestamp = now.toLocaleTimeString();
             eventLog.push(`[${timestamp}] ${eventDesc}`);
-            
+
             let logElement = document.getElementById('events-log');
             let logHtml = '';
-            
+
             // Show most recent events first
             for (let i = eventLog.length - 1; i >= 0; i--) {
                 logHtml += `<div>${eventLog[i]}</div>`;
             }
-            
+
             logElement.innerHTML = logHtml;
         }
 
@@ -815,13 +896,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             let snackbar = document.getElementById("snackbar");
             snackbar.textContent = message;
             snackbar.className = "show";
-            setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+            setTimeout(function () { snackbar.className = snackbar.className.replace("show", ""); }, 3000);
         }
 
         // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             refreshDataLayer();
         });
     </script>
 </body>
+
 </html>
